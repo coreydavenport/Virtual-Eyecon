@@ -29,7 +29,7 @@
     $(".eyeconImg").click(function (){
     	
 
-    	$overlay.show().fadeOut(2000);
+    	$overlay.show().fadeOut(750);
     	$('#eyeconSound').get(0).play();
     });
     
