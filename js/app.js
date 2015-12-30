@@ -17,6 +17,7 @@
     //Select all elements on the page with the name attribute equal to eyecon
     var images = document.querySelectorAll('[name=eyecon]');
     var $overlay = $('<div id="overlay"></div>');
+    var eyeconSound = document.getElementById("eyeconSound");
     $("body").append($overlay);
     //For each image bind the click event
     for(var i=0; i < images.length; i++)
@@ -27,8 +28,9 @@
     }
     $(".eyeconImg").click(function (){
     	
-    	$overlay.show().fadeOut(2000);
 
+    	$overlay.show().fadeOut(2000);
+    	$('#eyeconSound').get(0).play();
     });
     
     	
